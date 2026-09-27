@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Happy Birthday Amber! Coachella 2027 in Palm Springs with Tee and Lin.">
+<meta property="og:title" content="Happy Birthday, Mrs. Banana!">
+<meta property="og:description" content="A birthday surprise for Amber. Scratch your ticket.">
+<meta name="robots" content="noindex">
+<style>[hidden]{display:none!important}img{max-width:100%}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Mrs. Banana Goes to Coachella</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Nunito:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap">
+<style>
+  :root{
+    --ink:#2B1640; --ink-soft:#5A3E6E;
+    --sand:#FFF3E0; --sand-2:#FFE6C7; --paper:#FFFDF8;
+    --coral:#FF6F59; --pink:#FF4F9A; --pool:#15B3BD; --banana:#FFD23F; --palm:#1F7A5A;
+    --dusk:#1E0F33; --dusk-2:#3A1F5C;
+    --display:'Shrikhand', 'Cooper Black', Georgia, serif;
+    --body:'Nunito', 'Segoe UI', system-ui, sans-serif;
+    --mono:'Space Mono', ui-monospace, Consolas, monospace;
+    color-scheme: light;
+  }
+  body{background:var(--sand);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+  *{box-sizing:border-box}
+  h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;text-wrap:balance;margin:0}
+  p{margin:0}
+  button{font:inherit;color:inherit;cursor:pointer}
+  :focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:8px}
+  .wrap{max-width:780px;margin:0 auto;padding-inline:16px}
+  section{padding-block:56px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+  .h2{font-size:clamp(34px,7vw,52px);color:var(--ink)}
+  .lede{font-size:18px;color:var(--ink-soft);max-width:60ch}
+  .head{display:grid;gap:10px;margin-bottom:28px}
+
+  /* ---------- hero ---------- */
+  .hero{padding-block:44px 0;background:linear-gradient(180deg,#FF8FA3 0%,#FFB38A 42%,#FFD9A0 78%,#F6B470 100%);overflow:hidden}
+  .hero .wrap{display:grid;gap:14px;text-align:left}
+  .hero .eyebrow{color:var(--ink)}
+  .hero h1{font-size:clamp(46px,11vw,92px);color:var(--ink);letter-spacing:-.01em}
+  .hero h1 em{font-style:normal;color:var(--paper);-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;text-shadow:4px 4px 0 var(--pink)}
+  .hero p{font-size:19px;max-width:34ch;font-weight:600}
+  .scene{display:block;width:100%;height:auto;margin-top:-10px}
+  .cta{justify-self:start;display:inline-flex;gap:8px;align-items:center;background:var(--ink);color:var(--banana);border:0;border-radius:999px;padding:12px 20px;font-weight:800;text-decoration:none;box-shadow:4px 4px 0 var(--pink)}
+  .cta:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--pink)}
+
+  /* ---------- ticket ---------- */
+  .ticket-sec{background:var(--sand-2)}
+  .ticket-zone{position:relative;max-width:640px;margin:0 auto}
+  .ticket{position:relative;display:flex;border-radius:22px;background:linear-gradient(120deg,var(--pink),var(--coral) 60%,#FF9E4F);color:var(--paper);box-shadow:6px 6px 0 var(--ink);border:3px solid var(--ink);overflow:hidden}
+  .stub{flex:0 0 64px;border-right:3px dashed rgba(255,253,248,.7);display:grid;place-items:center;background:rgba(43,22,64,.18)}
+  .stub span{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--mono);font-weight:700;letter-spacing:.2em;font-size:13px}
+  .t-main{padding:22px 22px 18px;display:grid;gap:8px;min-width:0;flex:1}
+  .t-main .eyebrow{opacity:.9}
+  .t-main h3{font-size:clamp(38px,8vw,58px);text-shadow:3px 3px 0 var(--ink)}
+  .t-line{font-weight:800;font-size:18px}
+  .t-meta{font-family:var(--mono);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 16px;opacity:.95}
+  .barcode{height:34px;margin-top:6px;background:repeating-linear-gradient(90deg,var(--paper) 0 2px,transparent 2px 4px,var(--paper) 4px 7px,transparent 7px 9px,var(--paper) 9px 10px,transparent 10px 14px);opacity:.85;border-radius:3px}
+  #scratch{position:absolute;inset:0;width:100%;height:100%;border-radius:22px;touch-action:none;cursor:grab;transition:opacity .8s ease}
+  #scratch.gone{opacity:0;pointer-events:none}
+  .ticket-help{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-top:18px;max-width:640px;margin-inline:auto}
+  .ticket-help p{font-weight:700}
+  .linkbtn{background:none;border:0;padding:4px 0;font-weight:800;text-decoration:underline;text-underline-offset:3px;color:var(--ink-soft)}
+  .surprise{font-family:var(--display);font-size:26px;color:var(--pink)}
+
+  /* ---------- crew ---------- */
+  .crew{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .card{position:relative;background:var(--paper);border:3px solid var(--ink);border-radius:20px;box-shadow:5px 5px 0 var(--ink);padding:18px;display:grid;gap:8px;align-content:start}
+  .avatar{width:96px;height:96px;border-radius:50%;border:3px solid var(--ink);display:grid;place-items:center;overflow:hidden}
+  .avatar svg{width:92%;height:92%}
+  .av-amber{background:#FFE9F2}
+  .av-daniel{background:#DDF6F7}
+  .card h3{font-size:30px}
+  .role{color:var(--ink-soft);font-weight:600;font-size:15px}
+  .stamp{position:absolute;top:18px;right:14px;font-family:var(--mono);font-weight:700;font-size:12px;letter-spacing:.08em;padding:4px 8px;border:3px solid currentColor;border-radius:6px;transform:rotate(9deg);color:var(--palm);background:rgba(255,253,248,.85)}
+  .stamp.pink{color:var(--pink)}
+  .card.wide{grid-column:1/-1;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:22px;align-items:center}
+  .polaroid{background:#fff;padding:10px 10px 34px;border:2px solid var(--ink);transform:rotate(-3deg);box-shadow:4px 4px 0 rgba(43,22,64,.25);position:relative}
+  .polaroid img{display:block;width:100%;aspect-ratio:720/809;object-fit:cover}
+  .polaroid figcaption{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-family:var(--display);font-size:17px;color:var(--ink)}
+  .stamps{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .stamps .stamp{position:static;transform:rotate(-4deg)}
+  .stamps .stamp:nth-child(2){transform:rotate(3deg)}
+
+  /* ---------- house ---------- */
+  .house-sec{background:linear-gradient(180deg,var(--sand) 0%,#D8F3F2 100%)}
+  .carousel{position:relative;border:3px solid var(--ink);border-radius:22px;overflow:hidden;box-shadow:6px 6px 0 var(--ink);background:var(--ink)}
+  .carousel img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;transition:opacity .35s}
+  .cap{background:var(--paper);padding:14px 18px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-top:3px solid var(--ink)}
+  .cap p{font-weight:700;flex:1 1 240px}
+  .ctrls{display:flex;gap:8px;align-items:center}
+  .round{width:42px;height:42px;border-radius:50%;border:3px solid var(--ink);background:var(--banana);font-weight:800;font-size:18px;display:grid;place-items:center}
+  .dots{display:flex;gap:6px}
+  .dots button{width:12px;height:12px;border-radius:50%;border:2px solid var(--ink);background:transparent;padding:0}
+  .dots button[aria-current="true"]{background:var(--ink)}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .chip{font-family:var(--mono);font-size:13px;font-weight:700;padding:7px 12px;border-radius:999px;border:2px solid var(--ink);background:var(--paper)}
+  .chip:nth-child(3n+1){background:#FFE3EE}.chip:nth-child(3n+2){background:#D6F5F6}.chip:nth-child(3n){background:#FFF1BF}
+
+  /* ---------- countdown ---------- */
+  .count-sec{background:var(--dusk);color:var(--sand)}
+  .count-sec .h2{color:var(--banana)}
+  .count-sec .lede{color:#E4D3F2}
+  .toggle{display:inline-flex;border:2px solid var(--banana);border-radius:999px;padding:3px;gap:3px;margin-bottom:22px}
+  .toggle button{border:0;background:transparent;color:var(--banana);border-radius:999px;padding:8px 14px;font-weight:800;font-size:15px}
+  .toggle button[aria-pressed="true"]{background:var(--banana);color:var(--dusk)}
+  .clock{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+  .unit{background:var(--dusk-2);border-radius:18px;padding:16px 8px;text-align:center;border:2px solid rgba(255,210,63,.35)}
+  .unit b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(34px,8vw,60px);color:var(--banana);line-height:1;font-variant-numeric:tabular-nums}
+  .unit span{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#E4D3F2}
+  .plan{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px}
+  .day{border-top:3px solid var(--pink);padding-top:10px;display:grid;gap:4px}
+  .day .eyebrow{color:var(--pink)}
+  .day p{color:#F2E6FA;font-size:15px}
+
+  /* ---------- bingo ---------- */
+  .bingo{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+  .sq{aspect-ratio:1;border:2px solid var(--ink);border-radius:14px;background:var(--paper);padding:6px;font-weight:800;font-size:clamp(11px,2.6vw,15px);line-height:1.2;display:grid;place-items:center;text-align:center;position:relative;transition:transform .12s}
+  .sq:hover{transform:rotate(-1.5deg)}
+  .sq[aria-pressed="true"]{background:var(--banana)}
+  .sq[aria-pressed="true"]::after{content:"";position:absolute;inset:14%;border:4px solid var(--pink);border-radius:50%;opacity:.75;transform:rotate(-12deg)}
+  .bingo-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
+  .score{font-family:var(--mono);font-weight:700}
+  #bingoMsg{font-family:var(--display);font-size:24px;color:var(--pink)}
+
+  /* ---------- oracle ---------- */
+  .oracle-sec{background:linear-gradient(180deg,#FFE6C7 0%,#FFD0DC 100%)}
+  .oracle{background:var(--paper);border:3px solid var(--ink);border-radius:24px;box-shadow:6px 6px 0 var(--ink);padding:20px;display:grid;gap:16px}
+  .asks{display:flex;flex-wrap:wrap;gap:8px}
+  .ask{border:2px solid var(--ink);background:var(--sand);border-radius:999px;padding:8px 14px;font-weight:800;font-size:15px}
+  .ask:hover{background:var(--banana)}
+  .ask:disabled{opacity:.5;cursor:wait}
+  .askform{display:flex;gap:8px;flex-wrap:wrap}
+  .askform input{flex:1 1 220px;min-width:0;border:2px solid var(--ink);border-radius:14px;padding:10px 14px;font:inherit;background:#fff;color:var(--ink)}
+  .askform button{border:0;background:var(--ink);color:var(--banana);border-radius:14px;padding:10px 18px;font-weight:800}
+  .answer{background:#2B1640;color:#FFF3E0;border-radius:18px;padding:18px 20px;min-height:120px;white-space:pre-wrap;font-size:16.5px}
+  .answer.thinking{color:#CDB8E0;font-style:italic}
+  .note{font-size:13px;color:var(--ink-soft)}
+
+  /* ---------- finale ---------- */
+  .finale{background:
+      radial-gradient(2px 2px at 12% 18%,#fff8 50%,transparent 51%),
+      radial-gradient(2px 2px at 78% 12%,#fff9 50%,transparent 51%),
+      radial-gradient(1.5px 1.5px at 40% 30%,#fff7 50%,transparent 51%),
+      radial-gradient(2px 2px at 90% 44%,#fff8 50%,transparent 51%),
+      radial-gradient(1.5px 1.5px at 22% 60%,#fff6 50%,transparent 51%),
+      radial-gradient(2px 2px at 64% 70%,#fff7 50%,transparent 51%),
+      linear-gradient(180deg,var(--dusk) 0%,#4A1F5E 70%,#7A2C63 100%);
+    color:var(--sand);text-align:center;overflow:hidden}
+  .finale .wrap{display:grid;justify-items:center;gap:18px}
+  .bday{font-size:clamp(40px,10vw,84px);color:var(--banana);text-shadow:4px 4px 0 var(--pink)}
+  .word{display:inline-block;white-space:nowrap}
+  .ltr{display:inline-block;animation:hop 1.6s ease-in-out infinite;animation-delay:calc(var(--i) * 70ms)}
+  @keyframes hop{0%,55%,100%{transform:translateY(0)}25%{transform:translateY(-12px) rotate(-4deg)}}
+  .stage{width:min(300px,78vw);position:relative}
+  .dancer{animation:sway 1.1s ease-in-out infinite alternate;transform-origin:50% 96%}
+  .party .dancer{animation-duration:.36s}
+  @keyframes sway{from{transform:rotate(-7deg) translateY(0)}to{transform:rotate(7deg) translateY(-10px)}}
+  .spot{position:absolute;left:10%;right:10%;bottom:-4px;height:26px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,210,63,.55),transparent)}
+  .finale p{max-width:44ch;color:#F2E6FA;font-size:18px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .fbtn{border:3px solid var(--banana);background:var(--banana);color:var(--dusk);border-radius:999px;padding:12px 20px;font-weight:800}
+  .fbtn.alt{background:transparent;color:var(--banana)}
+  .sig{font-family:var(--display);font-size:24px;color:var(--pink)}
+  footer{background:#7A2C63;color:#F2E6FA;text-align:center;padding-block:18px;font-size:14px}
+
+  /* banana parts (shared by every banana on the page) */
+  .arm-l{transform-box:view-box;transform-origin:72px 176px;animation:wl .55s ease-in-out infinite alternate}
+  .arm-r{transform-box:view-box;transform-origin:170px 176px;animation:wr .55s ease-in-out infinite alternate}
+  @keyframes wl{from{transform:rotate(8deg)}to{transform:rotate(-28deg)}}
+  @keyframes wr{from{transform:rotate(-8deg)}to{transform:rotate(28deg)}}
+  .eye{transform-box:fill-box;transform-origin:center;animation:blink 4.2s infinite}
+  @keyframes blink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+
+  /* overlays */
+  #fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+  #rain{position:fixed;inset:0;pointer-events:none;z-index:49;overflow:hidden}
+  .drop{position:absolute;top:-60px;animation:fall linear forwards;will-change:transform}
+  @keyframes fall{to{transform:translateY(calc(100vh + 120px)) rotate(var(--r))}}
+
+  @media (max-width:560px){
+    .crew{grid-template-columns:1fr}
+    .card.wide{grid-template-columns:1fr}
+    .polaroid{max-width:260px}
+    .plan{grid-template-columns:1fr}
+    .clock{gap:8px}
+    .stub{flex-basis:46px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+</style>
+
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="rain" aria-hidden="true"></div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">A birthday present for Amber · from Daniel</span>
+    <h1>Happy Birthday, <em>Amber!</em></h1>
+    <p>Your present is hiding under the gold ticket below. Go scratch it.</p>
+    <a class="cta" href="#ticket">Take me to my ticket ↓</a>
+  </div>
+  <svg class="scene" viewBox="0 0 800 360" role="img" aria-label="A desert festival at sunset with a Ferris wheel, palm trees and mountains">
+    <circle cx="210" cy="228" r="78" fill="#FFE59A" opacity=".85"/>
+    <path d="M0 262 L90 196 L160 238 L250 164 L340 242 L430 188 L520 252 L620 178 L720 238 L800 204 L800 360 L0 360Z" fill="#E08A94" opacity=".85"/>
+    <path d="M0 292 L120 234 L220 282 L330 228 L450 288 L560 244 L680 292 L800 254 L800 360 L0 360Z" fill="#B85C7E"/>
+    <!-- art tower -->
+    <g transform="translate(330 318)">
+      <rect x="-26" y="-18" width="52" height="18" fill="#FF4F9A"/>
+      <rect x="-23" y="-36" width="46" height="18" fill="#FF6F59"/>
+      <rect x="-20" y="-54" width="40" height="18" fill="#FFB347"/>
+      <rect x="-17" y="-72" width="34" height="18" fill="#FFD23F"/>
+      <rect x="-14" y="-90" width="28" height="18" fill="#15B3BD"/>
+      <rect x="-11" y="-108" width="22" height="18" fill="#6C63FF"/>
+      <rect x="-8" y="-126" width="16" height="18" fill="#B06CE0"/>
+    </g>
+    <!-- ferris wheel -->
+    <g stroke="#2B1640" stroke-linecap="round">
+      <line x1="560" y1="170" x2="498" y2="324" stroke-width="7"/>
+      <line x1="560" y1="170" x2="622" y2="324" stroke-width="7"/>
+    </g>
+    <g id="wheel">
+      <g id="spokes" stroke="#2B1640" stroke-width="2.5"></g>
+      <circle cx="560" cy="170" r="112" fill="none" stroke="#2B1640" stroke-width="5"/>
+      <circle cx="560" cy="170" r="100" fill="none" stroke="#FF4F9A" stroke-width="2"/>
+      <circle cx="560" cy="170" r="10" fill="#FFD23F" stroke="#2B1640" stroke-width="3"/>
+    </g>
+    <g id="gondolas"></g>
+    <!-- palms -->
+    <g fill="#3A1E4F" stroke="#3A1E4F">
+      <g transform="translate(92 330)">
+        <path d="M0 0 C-10 -70 10 -140 -6 -214" fill="none" stroke-width="9" stroke-linecap="round"/>
+        <g transform="translate(-6 -214)" stroke="none">
+          <path d="M0 0 Q44 -30 88 12 Q44 -8 0 0Z"/><path d="M0 0 Q-44 -30 -88 12 Q-44 -8 0 0Z"/>
+          <path d="M0 0 Q30 -48 70 -40 Q30 -30 0 0Z"/><path d="M0 0 Q-30 -48 -70 -40 Q-30 -30 0 0Z"/>
+          <path d="M0 0 Q40 6 64 50 Q30 14 0 0Z"/><path d="M0 0 Q-40 6 -64 50 Q-30 14 0 0Z"/>
+        </g>
+      </g>
+      <g transform="translate(730 332) scale(.8)">
+        <path d="M0 0 C8 -70 -8 -140 6 -214" fill="none" stroke-width="10" stroke-linecap="round"/>
+        <g transform="translate(6 -214)" stroke="none">
+          <path d="M0 0 Q44 -30 88 12 Q44 -8 0 0Z"/><path d="M0 0 Q-44 -30 -88 12 Q-44 -8 0 0Z"/>
+          <path d="M0 0 Q30 -48 70 -40 Q30 -30 0 0Z"/><path d="M0 0 Q-30 -48 -70 -40 Q-30 -30 0 0Z"/>
+          <path d="M0 0 Q40 6 64 50 Q30 14 0 0Z"/><path d="M0 0 Q-40 6 -64 50 Q-30 14 0 0Z"/>
+        </g>
+      </g>
+      <g transform="translate(672 336) scale(.55)">
+        <path d="M0 0 C-8 -70 8 -140 -4 -214" fill="none" stroke-width="12" stroke-linecap="round"/>
+        <g transform="translate(-4 -214)" stroke="none">
+          <path d="M0 0 Q44 -30 88 12 Q44 -8 0 0Z"/><path d="M0 0 Q-44 -30 -88 12 Q-44 -8 0 0Z"/>
+          <path d="M0 0 Q30 -48 70 -40 Q30 -30 0 0Z"/><path d="M0 0 Q-30 -48 -70 -40 Q-30 -30 0 0Z"/>
+        </g>
+      </g>
+    </g>
+    <rect x="0" y="322" width="800" height="38" fill="#F2A65E"/>
+    <g font-family="Space Mono, monospace" font-size="11" fill="#2B1640" opacity=".7"><text x="16" y="346">INDIO, CA</text><text x="690" y="346">33.68° N</text></g>
+  </svg>
+</header>
+
+<!-- ============ TICKET ============ -->
+<section class="ticket-sec" id="ticket">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Step one</span>
+      <h2 class="h2">Scratch your ticket</h2>
+      <p class="lede">Drag your finger (or mouse) over the gold foil.</p>
+    </div>
+    <div class="ticket-zone">
+      <div class="ticket" id="ticketCard">
+        <div class="stub"><span>ADMIT FOUR</span></div>
+        <div class="t-main">
+          <span class="eyebrow">Birthday pass · No. 0001 · Amber</span>
+          <h3>Coachella 2027</h3>
+          <p class="t-line">+ a whole house in Palm Springs</p>
+          <p class="t-line">+ Tee &amp; Lin are coming too</p>
+          <div class="t-meta"><span>EMPIRE POLO CLUB · INDIO</span><span>WEEKEND 1 · APRIL 9–11, 2027</span><span>SEAT: WHEREVER YOU DANCE</span></div>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </div>
+      <canvas id="scratch" aria-label="Gold scratch-off foil. Scratch it, or use the Just show me button."></canvas>
+    </div>
+    <div class="ticket-help">
+      <p id="scratchMsg" aria-live="polite">Keep going, it's under there somewhere…</p>
+      <button class="linkbtn" id="skipScratch" type="button">Just show me</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREW ============ -->
+<section id="crew">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">The lineup that matters</span>
+      <h2 class="h2">The crew</h2>
+      <p class="lede">Four people, one desert house, zero bedtimes. Everyone has RSVP'd yes.</p>
+    </div>
+    <div class="crew">
+      <article class="card">
+        <span class="stamp pink">HEADLINER</span>
+        <div class="avatar av-amber banana-slot" aria-label="Banana girl illustration"></div>
+        <h3>Amber</h3>
+        <p class="role">Birthday girl. Also known as Mrs. Banana. Gets first pick of the bedrooms.</p>
+      </article>
+      <article class="card">
+        <span class="stamp">CONFIRMED</span>
+        <div class="avatar av-daniel" aria-label="Smiling sun in sunglasses">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <g stroke="#FF6F59" stroke-width="6" stroke-linecap="round">
+              <line x1="50" y1="6" x2="50" y2="16"/><line x1="50" y1="84" x2="50" y2="94"/><line x1="6" y1="50" x2="16" y2="50"/><line x1="84" y1="50" x2="94" y2="50"/>
+              <line x1="19" y1="19" x2="26" y2="26"/><line x1="74" y1="74" x2="81" y2="81"/><line x1="81" y1="19" x2="74" y2="26"/><line x1="26" y1="74" x2="19" y2="81"/>
+            </g>
+            <circle cx="50" cy="50" r="28" fill="#FFD23F" stroke="#2B1640" stroke-width="3"/>
+            <rect x="29" y="40" width="18" height="11" rx="4" fill="#2B1640"/><rect x="53" y="40" width="18" height="11" rx="4" fill="#2B1640"/>
+            <line x1="47" y1="44" x2="53" y2="44" stroke="#2B1640" stroke-width="3"/>
+            <path d="M38 60 Q50 71 62 60" fill="none" stroke="#2B1640" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Daniel</h3>
+        <p class="role">Booked the house. Carries the sunscreen, the water and the snacks.</p>
+      </article>
+      <article class="card wide">
+        <figure class="polaroid" style="margin:0">
+          <img src="img/tee-lin.jpg" alt="Tee and Lin dressed up by a pool at night" width="720" height="809">
+          <figcaption>Tee + Lin</figcaption>
+        </figure>
+        <div style="display:grid;gap:10px">
+          <h3>Tee &amp; Lin</h3>
+          <p class="role">Amber's cousin Tee and his girlfriend Lin said yes to the whole weekend at the house. Their outfits are already better than ours.</p>
+          <div class="stamps"><span class="stamp">TEE ✓ CONFIRMED</span><span class="stamp">LIN ✓ CONFIRMED</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOUSE ============ -->
+<section class="house-sec" id="house">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Home base</span>
+      <h2 class="h2">Our house in Palm Springs</h2>
+      <p class="lede">Festival by day, this place by night. Tap through the tour.</p>
+    </div>
+    <div class="carousel">
+      <img id="houseImg" src="img/house-pool.jpg" alt="" width="1200" height="800">
+      <div class="cap">
+        <p id="houseCap" aria-live="polite"></p>
+        <div class="ctrls">
+          <button class="round" id="prevHouse" type="button" aria-label="Previous photo">‹</button>
+          <div class="dots" id="houseDots"></div>
+          <button class="round" id="nextHouse" type="button" aria-label="Next photo">›</button>
+        </div>
+      </div>
+    </div>
+    <div class="chips">
+      <span class="chip">POOL + SPA</span><span class="chip">FIRE PIT</span><span class="chip">MOUNTAIN VIEWS</span>
+      <span class="chip">ORANGE SECTIONAL</span><span class="chip">BIG KITCHEN ISLAND</span><span class="chip">~30 MIN TO INDIO</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COUNTDOWN ============ -->
+<section class="count-sec" id="countdown">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" style="color:var(--pink)">Counting down</span>
+      <h2 class="h2">Until the desert</h2>
+      <p class="lede">We're going Weekend 1, the very first weekend of Coachella 2027.</p>
+    </div>
+    <div class="toggle"><button type="button" aria-pressed="true" tabindex="-1" style="cursor:default">Weekend 1 · Fri Apr 9 – Sun Apr 11</button></div>
+    <div class="clock" aria-live="off">
+      <div class="unit"><b id="cdD">0</b><span>days</span></div>
+      <div class="unit"><b id="cdH">0</b><span>hours</span></div>
+      <div class="unit"><b id="cdM">0</b><span>min</span></div>
+      <div class="unit"><b id="cdS">0</b><span>sec</span></div>
+    </div>
+    <div class="plan">
+      <div class="day"><span class="eyebrow">Friday</span><p>Land in Palm Springs, drop bags, jump in the pool. Head to the polo fields by golden hour.</p></div>
+      <div class="day"><span class="eyebrow">Saturday</span><p>Slow breakfast at the island. Festival all day. Fire pit and stories when we get home.</p></div>
+      <div class="day"><span class="eyebrow">Sunday</span><p>Hot tub recovery. One last day on the grass. Birthday toast under the Ferris wheel.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BINGO ============ -->
+<section id="bingo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Bring this on the trip</span>
+      <h2 class="h2">Coachella bingo</h2>
+      <p class="lede">Tap a square when it happens. Four in a row and Tee buys the next round.</p>
+    </div>
+    <div class="bingo" id="bingoGrid"></div>
+    <div class="bingo-bar">
+      <span class="score" id="bingoScore">0 / 16</span>
+      <span id="bingoMsg" aria-live="polite"></span>
+      <button class="linkbtn" id="bingoReset" type="button">Clear the card</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORACLE ============ -->
+<section class="oracle-sec" id="oracle">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Ask the crystal ball</span>
+      <h2 class="h2">Ask the Desert Oracle</h2>
+      <p class="lede">A fortune-teller who knows all about the trip, the crew and the house. Tap again for a new answer.</p>
+    </div>
+    <div class="oracle">
+      <div class="asks">
+        <button class="ask" type="button" data-task="fit">Pick my festival fit</button>
+        <button class="ask" type="button" data-task="crew">Name our crew</button>
+        <button class="ask" type="button" data-task="toast">Write my birthday toast</button>
+        <button class="ask" type="button" data-task="fortune">Read my Coachella fortune</button>
+      </div>
+      <form class="askform" id="askForm">
+        <label for="askInput" class="eyebrow" style="flex-basis:100%">Or ask your own question</label>
+        <input id="askInput" type="text" maxlength="300" placeholder="What should we cook at the house on Saturday?">
+        <button type="submit">Ask</button>
+      </form>
+      <div class="answer" id="oracleOut" aria-live="polite">The crystal ball is warmed up. Pick a question above.</div>
+      <p class="note" id="oracleNote"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINALE ============ -->
+<section class="finale" id="banana">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--pink)">One more thing</span>
+    <h2 class="bday" id="bdayTitle" aria-label="Happy Birthday Mrs. Banana!">Happy Birthday Mrs. Banana!</h2>
+    <div class="stage" id="stage">
+      <div class="dancer banana-slot"></div>
+      <div class="spot"></div>
+    </div>
+    <p>Tap her for a surprise, or play her song. She has been practicing these moves all year.</p>
+    <div class="btns">
+      <button class="fbtn" id="rainBtn" type="button">Make it rain bananas</button>
+      <button class="fbtn alt" id="songBtn" type="button">Play her song ♪</button>
+    </div>
+    <p class="sig">I love you. See you in the desert. — Daniel</p>
+  </div>
+</section>
+<footer>Made for Amber's birthday · Palm Springs + Indio · April 2027</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = s => document.querySelector(s);
+  const store = {
+    get(k){ try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } },
+    set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+  };
+
+  /* ---------- banana girl ---------- */
+  const BANANA = `
+  <svg viewBox="0 0 240 320" aria-hidden="true" style="width:100%;height:auto;display:block;overflow:visible">
+    <g stroke="#2B1640" stroke-width="6" stroke-linecap="round" fill="none"><path d="M106 278 L99 304"/><path d="M142 278 L150 304"/></g>
+    <ellipse cx="94" cy="307" rx="14" ry="7" fill="#FF4F9A" stroke="#2B1640" stroke-width="3"/>
+    <ellipse cx="156" cy="307" rx="14" ry="7" fill="#FF4F9A" stroke="#2B1640" stroke-width="3"/>
+    <g class="arm-l"><path d="M74 176 Q44 158 36 124" stroke="#2B1640" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="35" cy="120" r="9" fill="#FFD23F" stroke="#2B1640" stroke-width="4"/></g>
+    <g class="arm-r"><path d="M168 176 Q198 158 206 124" stroke="#2B1640" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="207" cy="120" r="9" fill="#FFD23F" stroke="#2B1640" stroke-width="4"/></g>
+    <path d="M116 48 L111 20 Q121 13 130 20 L127 48 Z" fill="#7A5230" stroke="#2B1640" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M121 44 C 72 62, 58 150, 70 212 C 80 262, 112 290, 140 285 C 170 280, 184 242, 180 190 C 176 128, 160 70, 127 44 Z" fill="#FFD23F" stroke="#2B1640" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M98 76 C 84 134, 88 210, 112 268" stroke="#E9B524" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M152 78 C 164 134, 164 204, 152 262" stroke="#E9B524" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="136" cy="287" rx="8" ry="5" fill="#7A5230"/>
+    <g stroke="#2B1640" stroke-width="2.5">
+      <circle cx="90" cy="74" r="10" fill="#FF4F9A"/><circle cx="106" cy="61" r="10" fill="#FFFDF8"/><circle cx="123" cy="56" r="11" fill="#15B3BD"/>
+      <circle cx="140" cy="61" r="10" fill="#FF6F59"/><circle cx="156" cy="74" r="10" fill="#FFFDF8"/>
+    </g>
+    <g fill="#FFD23F"><circle cx="90" cy="74" r="3.5"/><circle cx="106" cy="61" r="3.5" fill="#FF4F9A"/><circle cx="123" cy="56" r="3.5"/><circle cx="140" cy="61" r="3.5"/><circle cx="156" cy="74" r="3.5" fill="#FF4F9A"/></g>
+    <g class="eye"><ellipse cx="103" cy="142" rx="12" ry="14" fill="#fff" stroke="#2B1640" stroke-width="3"/><circle cx="105" cy="145" r="7" fill="#2B1640"/><circle cx="108" cy="141" r="2.5" fill="#fff"/></g>
+    <g class="eye"><ellipse cx="143" cy="142" rx="12" ry="14" fill="#fff" stroke="#2B1640" stroke-width="3"/><circle cx="145" cy="145" r="7" fill="#2B1640"/><circle cx="148" cy="141" r="2.5" fill="#fff"/></g>
+    <g stroke="#2B1640" stroke-width="3" stroke-linecap="round"><path d="M92 131 L86 125"/><path d="M98 127 L95 120"/><path d="M154 131 L160 125"/><path d="M148 127 L151 120"/></g>
+    <ellipse cx="88" cy="168" rx="10" ry="6" fill="#FF8FB1" opacity=".85"/><ellipse cx="158" cy="168" rx="10" ry="6" fill="#FF8FB1" opacity=".85"/>
+    <path d="M110 166 Q123 188 136 166 Z" fill="#C2185B" stroke="#2B1640" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M117 176 Q123 182 129 176" fill="#FF8FB1"/>
+  </svg>`;
+  document.querySelectorAll('.banana-slot').forEach(el => el.innerHTML = BANANA);
+
+  /* ---------- hero ferris wheel ---------- */
+  const NS = 'http://www.w3.org/2000/svg', CX = 560, CY = 170, R = 112, N = 12;
+  const spokes = $('#spokes'), gond = $('#gondolas');
+  const cols = ['#FF4F9A','#15B3BD','#FFD23F','#FF6F59','#6C63FF','#FFFDF8'];
+  for (let i = 0; i < N; i++) {
+    const l = document.createElementNS(NS,'line');
+    const a = i / N * Math.PI * 2;
+    l.setAttribute('x1',CX); l.setAttribute('y1',CY);
+    l.setAttribute('x2',CX + Math.cos(a)*R); l.setAttribute('y2',CY + Math.sin(a)*R);
+    spokes.appendChild(l);
+    const g = document.createElementNS(NS,'g');
+    g.innerHTML = `<line x1="0" y1="0" x2="0" y2="8" stroke="#2B1640" stroke-width="2"/><rect x="-10" y="7" width="20" height="15" rx="5" fill="${cols[i%cols.length]}" stroke="#2B1640" stroke-width="2.5"/>`;
+    gond.appendChild(g);
+  }
+  const wheel = $('#wheel');
+  let ang = 0;
+  function spin(){
+    wheel.setAttribute('transform',`rotate(${ang*180/Math.PI} ${CX} ${CY})`);
+    [...gond.children].forEach((g,i) => {
+      const a = ang + i / N * Math.PI * 2;
+      g.setAttribute('transform',`translate(${CX + Math.cos(a)*R} ${CY + Math.sin(a)*R})`);
+    });
+    if (!reduce) { ang += 0.0022; requestAnimationFrame(spin); }
+  }
+  spin();
+
+  /* ---------- confetti ---------- */
+  const fx = $('#fx'), fctx = fx.getContext('2d');
+  let parts = [], running = false;
+  function sizeFx(){ const d = devicePixelRatio || 1; fx.width = innerWidth*d; fx.height = innerHeight*d; fctx.setTransform(d,0,0,d,0,0); }
+  sizeFx(); addEventListener('resize', sizeFx);
+  const CONF = ['#FF4F9A','#FFD23F','#15B3BD','#FF6F59','#FFFDF8','#6C63FF'];
+  function burst(x = innerWidth/2, y = innerHeight/3, n = 160){
+    if (reduce) return;
+    for (let i = 0; i < n; i++) {
+      const a = Math.random()*Math.PI*2, s = 4 + Math.random()*9;
+      parts.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s - 6,w:6+Math.random()*7,h:4+Math.random()*5,r:Math.random()*6,vr:(Math.random()-.5)*.4,c:CONF[i%CONF.length],life:0});
+    }
+    if (!running) { running = true; requestAnimationFrame(tick); }
+  }
+  function tick(){
+    fctx.clearRect(0,0,innerWidth,innerHeight);
+    parts = parts.filter(p => p.life < 220 && p.y < innerHeight + 40);
+    for (const p of parts) {
+      p.vy += .22; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.r += p.vr; p.life++;
+      fctx.save(); fctx.translate(p.x,p.y); fctx.rotate(p.r); fctx.fillStyle = p.c; fctx.fillRect(-p.w/2,-p.h/2,p.w,p.h); fctx.restore();
+    }
+    if (parts.length) requestAnimationFrame(tick); else { running = false; fctx.clearRect(0,0,innerWidth,innerHeight); }
+  }
+
+  /* ---------- scratch ticket ---------- */
+  const sc = $('#scratch'), sctx = sc.getContext('2d'), card = $('#ticketCard'), msg = $('#scratchMsg');
+  let revealed = false, lastW = 0, drawing = false, last = null, moves = 0;
+  function paintFoil(){
+    const r = card.getBoundingClientRect(), d = devicePixelRatio || 1;
+    lastW = r.width;
+    sc.width = r.width*d; sc.height = r.height*d;
+    sctx.setTransform(d,0,0,d,0,0);
+    sctx.globalCompositeOperation = 'source-over';
+    const g = sctx.createLinearGradient(0,0,r.width,r.height);
+    g.addColorStop(0,'#E8B84A'); g.addColorStop(.35,'#FFE9A3'); g.addColorStop(.6,'#D9A23A'); g.addColorStop(1,'#FFE08A');
+    sctx.fillStyle = g; sctx.fillRect(0,0,r.width,r.height);
+    sctx.fillStyle = 'rgba(255,255,255,.35)';
+    for (let i = 0; i < 70; i++) { const x = Math.random()*r.width, y = Math.random()*r.height, s = 1 + Math.random()*2.5; sctx.beginPath(); sctx.arc(x,y,s,0,7); sctx.fill(); }
+    sctx.fillStyle = '#7A5230'; sctx.textAlign = 'center'; sctx.textBaseline = 'middle';
+    const fs = Math.max(22, Math.min(40, r.width/13));
+    sctx.font = `${fs}px Shrikhand, Georgia, serif`;
+    sctx.fillText('Scratch me, birthday girl', r.width/2, r.height/2 - fs*.4);
+    sctx.font = `700 ${Math.round(fs*.42)}px "Space Mono", monospace`;
+    sctx.fillText('★  ONE VERY SPECIAL TICKET  ★', r.width/2, r.height/2 + fs*.75);
+  }
+  function scratchAt(p){
+    sctx.globalCompositeOperation = 'destination-out';
+    sctx.lineCap = 'round'; sctx.lineJoin = 'round'; sctx.lineWidth = 46;
+    sctx.beginPath(); sctx.moveTo((last||p).x,(last||p).y); sctx.lineTo(p.x,p.y); sctx.stroke();
+    last = p;
+    if (++moves % 12 === 0) checkCleared();
+  }
+  function checkCleared(){
+    const data = sctx.getImageData(0,0,sc.width,sc.height).data;
+    let clear = 0, total = 0;
+    for (let i = 3; i < data.length; i += 4*24) { total++; if (data[i] < 40) clear++; }
+    const pct = clear/total;
+    if (pct > .5) reveal();
+    else if (pct > .25) msg.textContent = 'Ooh, something is showing…';
+  }
+  function reveal(){
+    if (revealed) return;
+    revealed = true;
+    sc.classList.add('gone');
+    setTimeout(() => { sc.hidden = true; }, 850);
+    msg.innerHTML = '<span class="surprise">Surprise! We’re going to Coachella!</span>';
+    $('#skipScratch').hidden = true;
+    const r = card.getBoundingClientRect();
+    burst(r.left + r.width/2, r.top + r.height/2, 220);
+    setTimeout(() => burst(innerWidth*.2, innerHeight*.3, 90), 300);
+    setTimeout(() => burst(innerWidth*.8, innerHeight*.3, 90), 550);
+  }
+  const pos = e => { const r = sc.getBoundingClientRect(); return {x:e.clientX - r.left, y:e.clientY - r.top}; };
+  sc.addEventListener('pointerdown', e => { drawing = true; last = null; sc.setPointerCapture(e.pointerId); scratchAt(pos(e)); });
+  sc.addEventListener('pointermove', e => { if (drawing) scratchAt(pos(e)); });
+  const stop = () => { if (drawing) { drawing = false; last = null; checkCleared(); } };
+  sc.addEventListener('pointerup', stop); sc.addEventListener('pointercancel', stop);
+  $('#skipScratch').addEventListener('click', reveal);
+  paintFoil();
+  document.fonts?.ready.then(() => { if (!revealed && moves === 0) paintFoil(); });
+  addEventListener('resize', () => { if (!revealed && Math.abs(card.getBoundingClientRect().width - lastW) > 2) paintFoil(); });
+
+  /* ---------- house carousel ---------- */
+  const HOUSE = [
+    {src:'img/house-pool.jpg', alt:'Backyard pool and spa with lounge chairs, a fire pit and palm trees', cap:'The backyard: pool, spa, fire pit and palm trees with a mountain view.'},
+    {src:'img/house-living.jpg', alt:'Open living room with a big orange sectional sofa', cap:'The orange couch. Official group photo spot of the weekend.'},
+    {src:'img/house-kitchen.jpg', alt:'Bright kitchen with a marble island and dining table', cap:'The kitchen island, for pre-festival snacks and post-festival breakfast.'}
+  ];
+  let hi = 0;
+  const himg = $('#houseImg'), hcap = $('#houseCap'), dots = $('#houseDots');
+  HOUSE.forEach((h,i) => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label',`Photo ${i+1}`); b.onclick = () => showHouse(i); dots.appendChild(b); });
+  function showHouse(i){
+    hi = (i + HOUSE.length) % HOUSE.length;
+    const h = HOUSE[hi];
+    himg.src = h.src; himg.alt = h.alt; hcap.textContent = h.cap;
+    [...dots.children].forEach((d,j) => d.setAttribute('aria-current', j === hi));
+  }
+  $('#prevHouse').onclick = () => showHouse(hi - 1);
+  $('#nextHouse').onclick = () => showHouse(hi + 1);
+  HOUSE.forEach(h => { const im = new Image(); im.src = h.src; });
+  showHouse(0);
+
+  /* ---------- countdown ---------- */
+  const START = new Date('2027-04-09T12:00:00-07:00');
+  function tickClock(){
+    let ms = Math.max(0, START - Date.now());
+    const d = Math.floor(ms/864e5); ms -= d*864e5;
+    const h = Math.floor(ms/36e5); ms -= h*36e5;
+    const m = Math.floor(ms/6e4); ms -= m*6e4;
+    $('#cdD').textContent = d; $('#cdH').textContent = h; $('#cdM').textContent = m; $('#cdS').textContent = Math.floor(ms/1e3);
+  }
+  tickClock(); setInterval(tickClock, 1000);
+
+  /* ---------- bingo ---------- */
+  const SQUARES = ['Ferris wheel at sunset','Tee loses his phone','Lin’s fit wins the day','Group pic on the orange couch',
+    'Pool float before noon','Surprise guest on stage','Glitter in places','Lose the group, find the group',
+    'Strangers sing Happy Birthday','Late-night fire pit talk','Hot tub at 2am','Daniel dances. Badly.',
+    'Churro in hand','Sunburn despite sunscreen','Spot the giant art piece','Amber: “best birthday ever”'];
+  const LINES = [];
+  for (let i = 0; i < 4; i++) { LINES.push([0,1,2,3].map(j => i*4+j)); LINES.push([0,1,2,3].map(j => j*4+i)); }
+  LINES.push([0,5,10,15], [3,6,9,12]);
+  let marks = store.get('amber-bingo'); if (!Array.isArray(marks) || marks.length !== 16) marks = Array(16).fill(false);
+  let lines = LINES.filter(l => l.every(i => marks[i])).length;
+  const grid = $('#bingoGrid');
+  SQUARES.forEach((t,i) => {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'sq'; b.textContent = t;
+    b.setAttribute('aria-pressed', marks[i]);
+    b.onclick = () => { marks[i] = !marks[i]; b.setAttribute('aria-pressed', marks[i]); store.set('amber-bingo', marks); scoreBingo(b); };
+    grid.appendChild(b);
+  });
+  function scoreBingo(el){
+    $('#bingoScore').textContent = `${marks.filter(Boolean).length} / 16`;
+    const now = LINES.filter(l => l.every(i => marks[i])).length;
+    if (el && now > lines) {
+      $('#bingoMsg').textContent = 'BINGO! Tee, it’s your round.';
+      const r = el.getBoundingClientRect(); burst(r.left + r.width/2, r.top + r.height/2, 140);
+    } else if (now === 0) $('#bingoMsg').textContent = '';
+    lines = now;
+  }
+  $('#bingoReset').onclick = () => { marks = Array(16).fill(false); store.set('amber-bingo', marks); [...grid.children].forEach(b => b.setAttribute('aria-pressed', false)); lines = 0; scoreBingo(); };
+  scoreBingo();
+
+  /* ---------- desert oracle ---------- */
+  const sampleP = (window.claude && window.claude.use) ? window.claude.use('sample').catch(() => null) : Promise.resolve(null);
+  const CONTEXT = `You are the Desert Oracle, a playful, warm fortune-teller inside a birthday-present web app that Daniel made for his wife Amber.
+Facts you know:
+- It's Amber's birthday. Her nickname is Mrs. Banana.
+- Daniel booked a house in Palm Springs, California for Coachella 2027 (the festival is at the Empire Polo Club in Indio). They are going Weekend 1: Friday April 9 to Sunday April 11, 2027.
+- Joining them for the weekend at the house: Amber's cousin Tee and his girlfriend Lin. They both confirmed.
+- The house has a pool and spa, a fire pit, blue lounge chairs, palm trees with a mountain view, a big orange sectional sofa, and a big marble kitchen island.
+Rules: the 2027 lineup has not been announced, so never name specific performing artists. Keep it under 120 words. Plain text with line breaks, no markdown headings or bold. Be funny and sweet, with at most one or two banana puns.`;
+  const TASKS = {
+    fit: 'Design Amber’s Coachella outfit for one day of the festival. Give the look a name, list 4 pieces and one accessory with a little banana wink, and one line on why it works in the desert heat.',
+    crew: 'Invent 5 squad names for Amber, Daniel, Tee and Lin’s Coachella crew. One per line, each with a short tagline.',
+    toast: 'Write a short birthday toast Daniel could give Amber by the fire pit at the Palm Springs house. Sweet, a little funny, under 90 words.',
+    fortune: 'Read Amber’s Coachella 2027 fortune like a desert fortune-teller: 4 short, specific predictions about the weekend with Daniel, Tee and Lin at the house and the festival.'
+  };
+  const FALLBACK = {
+    fit: ['“Desert Disco Goddess”\nA crochet halter in sunset orange, high-waisted white shorts, a gold body chain and cowgirl boots.\nAccessory: tiny banana-yellow sunglasses.\nIt breathes in the heat and glows at golden hour.',
+      '“Polo Field Princess”\nA flowy white mini dress, a woven sun hat, stacked gold bangles and comfy platform sandals.\nAccessory: a banana-print scrunchie on your wrist, just in case.\nCool enough for noon, cute enough for the Ferris wheel.',
+      '“Midnight Mirage”\nA sequin top in lilac, black biker shorts, a fringe crossbody bag and white sneakers you can dance in.\nAccessory: glitter freckles, obviously.\nMade for the night sets when the desert cools off.',
+      '“Palm Springs Peach”\nA peach linen set, a crochet bucket hat, shell anklets and gold hoops.\nAccessory: a yellow bandana tied like a banana bow.\nIt matches the orange couch, so every group photo is a win.'],
+    crew: ['The Palm Springs Peelers\nFour Go Bananas\nTLDA: Tee, Lin, Daniel, Amber\nThe Fire Pit Society\nPolo Field Royalty',
+      'The Bunch (because bananas come in bunches)\nThe Orange Couch Club\nDesert Heat Committee\nHot Tub Headliners\nThe Wristband Four',
+      'Split Happens (banana split, get it?)\nThe Mirage Makers\nIndio Inner Circle\nSunscreen & Sequins\nMrs. Banana’s Entourage'],
+    toast: ['To Amber. You make every place feel like a vacation, so I figured I’d take you to an actual one. Here’s to the desert, to Tee and Lin for coming along, and to the best birthday girl a banana could ask for. I love you. Cheers!',
+      'Everybody raise a glass. Amber, you’re the reason this whole weekend exists. You’re my favorite person to dance with, travel with and do nothing with. Happy birthday, Mrs. Banana. Here’s to many more deserts together.',
+      'To the girl who can turn a random Tuesday into a party: this weekend is all yours. Tee, Lin, thank you for coming to celebrate her. Amber, happy birthday. You are loved more than a pool on a 95-degree day.'],
+    fortune: ['1. Someone in this crew will lose a sandal and find a best friend.\n2. The Ferris wheel will stop with you at the very top at sunset.\n3. Lin will lend you the perfect lip gloss at exactly the right moment.\n4. Sunday ends in the hot tub with everyone saying “same time next year.”',
+      '1. A stranger will compliment your outfit three times in one day.\n2. Tee will swear he knows a shortcut. He does not.\n3. The best set of the weekend will be one none of you planned to see.\n4. Daniel will cry a little at the fire pit and blame the smoke.',
+      '1. You will take the photo of the year on the orange couch.\n2. The desert wind will steal exactly one hat.\n3. A surprise on stage will make the whole crew scream.\n4. You’ll fall asleep on the drive home smiling. Daniel will keep the snacks coming.'],
+    custom: ['The crystal ball says yes. But bring sunscreen.','The desert spirits say: absolutely, and Tee is paying.','Signs point to yes, right after a pool break.','The Oracle sees it clearly: do it at golden hour.','Hmm, the ball is cloudy. Ask again after a churro.','Yes, and it will be the story everyone tells on the drive home.','The stars say: let the birthday girl decide.','Without a doubt. Mrs. Banana always gets her way on her birthday.']
+  };
+  const lastPick = {};
+  const out = $('#oracleOut'), note = $('#oracleNote'), askBtns = document.querySelectorAll('.ask'), askForm = $('#askForm');
+  let busy = false, ctl = null, oracleOff = false;
+  function setBusy(v){ busy = v; askBtns.forEach(b => b.disabled = v); askForm.querySelector('button').disabled = v; }
+  function fallback(task){
+    const key = task || 'custom', list = FALLBACK[key];
+    let i; do { i = Math.floor(Math.random()*list.length); } while (list.length > 1 && i === lastPick[key]);
+    lastPick[key] = i;
+    out.classList.remove('thinking');
+    out.textContent = 'The crystal ball is swirling…';
+    setTimeout(() => { out.textContent = list[i]; }, reduce ? 0 : 700);
+    note.textContent = '';
+  }
+  async function ask(task, custom){
+    if (busy) return;
+    const sample = oracleOff ? null : await sampleP;
+    if (!sample) { oracleOff = true; fallback(task); return; }
+    setBusy(true); note.textContent = '';
+    out.classList.add('thinking'); out.textContent = 'The Oracle is gazing into the crystal ball…';
+    ctl = new AbortController();
+    const prompt = CONTEXT + '\n\nTask: ' + (custom ? 'Answer this question from Amber about the trip, in character: ' + custom : TASKS[task]);
+    try {
+      await sample(prompt, { modelTier:'quick', cache:false, signal:ctl.signal,
+        onText: ({text}) => { out.classList.remove('thinking'); out.textContent = text; } });
+    } catch (e) {
+      out.classList.remove('thinking');
+      const c = e && e.code;
+      if (['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'].includes(c)) { oracleOff = true; fallback(task); }
+      else if (c === 'rate_limited') { if (e.text) out.textContent = e.text; note.textContent = 'The Oracle needs a breather. Try again in a minute.'; }
+      else if (c === 'refused') { out.textContent = ''; note.textContent = 'The Oracle won’t answer that one. Try asking another way.'; }
+      else if (c !== 'cancelled') { if (e && e.text) out.textContent = e.text; else fallback(task); note.textContent = 'The crystal ball flickered. Tap again to retry.'; }
+    } finally { setBusy(false); }
+  }
+  askBtns.forEach(b => b.onclick = () => ask(b.dataset.task));
+  askForm.addEventListener('submit', e => { e.preventDefault(); const q = $('#askInput').value.trim(); if (q) ask(null, q); });
+
+  /* ---------- finale ---------- */
+  const title = $('#bdayTitle'); let li = 0;
+  title.innerHTML = title.textContent.split(' ').map(w =>
+    `<span class="word" aria-hidden="true">${[...w].map(ch => `<span class="ltr" style="--i:${li++}">${ch}</span>`).join('')}</span>`).join(' ');
+  const rain = $('#rain');
+  function bananaRain(n = 46){
+    for (let i = 0; i < n; i++) {
+      const s = document.createElement('span'); s.className = 'drop'; s.textContent = '🍌';
+      const dur = 2.6 + Math.random()*2.4;
+      s.style.cssText = `left:${Math.random()*100}%;font-size:${22 + Math.random()*26}px;animation-duration:${dur}s;animation-delay:${Math.random()*1.2}s;--r:${(Math.random()*720 - 360)|0}deg`;
+      rain.appendChild(s); setTimeout(() => s.remove(), (dur + 1.4)*1000);
+    }
+  }
+  $('#rainBtn').onclick = () => { bananaRain(); burst(innerWidth/2, innerHeight*.4, 120); };
+  $('#stage').addEventListener('click', e => { bananaRain(20); burst(e.clientX, e.clientY, 90); });
+
+  const NOTE = {G4:392,A4:440,B4:493.9,C5:523.3,D5:587.3,E5:659.3,F5:698.5,G5:784};
+  const SONG = [['G4',.3],['G4',.12],['A4',.45],['G4',.45],['C5',.45],['B4',.9],
+    ['G4',.3],['G4',.12],['A4',.45],['G4',.45],['D5',.45],['C5',.9],
+    ['G4',.3],['G4',.12],['G5',.45],['E5',.45],['C5',.45],['B4',.45],['A4',.9],
+    ['F5',.3],['F5',.12],['E5',.45],['C5',.45],['D5',.45],['C5',1.1]];
+  let actx = null, playing = false;
+  $('#songBtn').onclick = () => {
+    if (playing) return;
+    try { actx = actx || new (window.AudioContext || window.webkitAudioContext)(); } catch { return; }
+    actx.resume && actx.resume();
+    playing = true; const btn = $('#songBtn'); btn.textContent = 'Dancing… ♪'; $('#stage').classList.add('party');
+    let t = actx.currentTime + .05;
+    for (const [n,d] of SONG) {
+      const o = actx.createOscillator(), g = actx.createGain();
+      o.type = 'triangle'; o.frequency.value = NOTE[n];
+      g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(.22,t+.02); g.gain.exponentialRampToValueAtTime(.001,t+d*.95);
+      o.connect(g).connect(actx.destination); o.start(t); o.stop(t+d);
+      t += d * 1.05;
+    }
+    const total = (t - actx.currentTime)*1000;
+    setTimeout(() => { bananaRain(30); burst(innerWidth/2, innerHeight*.35, 180); }, total - 400);
+    setTimeout(() => { playing = false; btn.textContent = 'Play her song ♪'; $('#stage').classList.remove('party'); }, total);
+  };
+})();
+</script>
+
+</body>
+</html>
